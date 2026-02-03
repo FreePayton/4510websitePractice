@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Payton — Accounting Student & Future Auditor</title>
+  <meta name="description" content="About Payton — accounting student and future auditor. Resume, skills, and classwork." />
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#111a2e;
+      --text:#e9eefc;
+      --muted:#b8c4e6;
+      --accent:#6ea8fe;
+      --border: rgba(255,255,255,.12);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 20% 0%, rgba(110,168,254,.18), transparent 60%),
+                  radial-gradient(900px 500px at 80% 20%, rgba(132,94,247,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{
+      position:sticky; top:0;
+      backdrop-filter: blur(10px);
+      background: rgba(11,18,32,.70);
+      border-bottom: 1px solid var(--border);
+      z-index:10;
+    }
+    .nav{
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 12px 18px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+    }
+    .brand{font-weight:800; letter-spacing:.2px}
+    .tag{color:var(--muted); font-size:13px}
+    nav{display:flex; gap:14px; flex-wrap:wrap; font-size:14px}
+    main{
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 26px 18px 68px;
+    }
+    .hero{
+      display:grid;
+      grid-template-columns: 1.4fr .9fr;
+      gap:14px;
+      align-items:stretch;
+      margin-top: 14px;
+    }
+    @media (max-width: 850px){ .hero{grid-template-columns:1fr} }
+    .card{
+      background: rgba(17,26,46,.75);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 18px;
+      box-shadow: 0 14px 40px rgba(0,0,0,.35);
+    }
+    h1{margin:0 0 8px; font-size: 32px; line-height:1.15}
+    h2{margin:0 0 10px; font-size: 20px}
+    .muted{color:var(--muted)}
+    .pill-row{display:flex; flex-wrap:wrap; gap:8px; margin-top:12px}
+    .pill{
+      font-size: 12px;
+      padding: 6px 10px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: rgba(255,255,255,.04);
+    }
+    .btn-row{display:flex; gap:10px; flex-wrap:wrap; margin-top:12px}
+    .btn{
+      display:inline-block;
+      padding: 10px 12px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.06);
+      font-weight: 650;
+      font-size: 14px;
+    }
+    .btn.primary{
+      background: rgba(110,168,254,.16);
+      border-color: rgba(110,168,254,.35);
+    }
+    section{scroll-margin-top: 80px}
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:12px;
+      margin-top: 12px;
+    }
+    @media (max-width: 850px){ .grid{grid-template-columns:1fr} }
+    .item-title{font-weight:800; margin:0 0 6px}
+    .item-desc{margin:0; color:var(--muted); font-size:14px}
+    .photo{
+      width:100%;
+      aspect-ratio: 4/3;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.05);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color: var(--muted);
+      overflow:hidden;
+    }
+    .photo img{width:100%; height:100%; object-fit:cover; display:block}
+    footer{
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 20px 18px 34px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .small{font-size:13px}
+    ul{margin:10px 0 0 18px}
+    li{margin:6px 0}
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="nav">
+      <div>
+        <div class="brand">Payton</div>
+        <div class="tag">Accounting Student &amp; Future Auditor</div>
+      </div>
+      <nav aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
+        <a href="#skills">Skills</a>
+        <a href="#photo">Photo</a>
+        <a href="#classwork">Classwork</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="card">
+        <h1>Hi — I’m Payton.</h1>
+        <p class="muted">
+          I’m an accounting student working toward a career in public auditing. This site is a simple “about me”
+          hub with my resume, skills, and coursework highlights.
+        </p>
+        <div class="pill-row" aria-label="Highlights">
+          <span class="pill">Accounting</span>
+          <span class="pill">Auditing (future focus)</span>
+          <span class="pill">Analytics mindset</span>
+          <span class="pill">Clean + professional</span>
+        </div>
+        <div class="btn-row">
+          <a class="btn primary" href="#resume">View Resume Section</a>
+          <a class="btn" href="#classwork">See Classwork</a>
+        </div>
+        <p class="small muted" style="margin-top:12px;">
+          (No contact info posted right now — can be added later.)
+        </p>
+      </div>
+
+      <div class="card" id="photo">
+        <h2>Photo</h2>
+        <div class="photo">
+          <!-- Add a photo later by uploading an image to /assets and updating the <img> below -->
+          <!-- Example: <img src="assets/payton.jpg" alt="Photo of Payton"> -->
+          <div>Placeholder — add a photo when you’re ready</div>
+        </div>
+        <p class="small muted" style="margin-top:10px;">
+          To add a photo: create an <code>assets</code> folder in your repo, upload an image, then replace the placeholder.
+        </p>
+      </div>
+    </section>
+
+    <section class="card" id="about" style="margin-top:14px;">
+      <h2>About</h2>
+      <p class="muted">
+        (Placeholder — edit this anytime.) Write 3–5 sentences about who you are, what you’re studying,
+        and what kind of opportunities you’re looking for.
+      </p>
+      <ul>
+        <li><strong>Current focus:</strong> Accounting coursework + building audit fundamentals</li>
+        <li><strong>Interests:</strong> Financial reporting, controls, and practical business analysis</li>
+        <li><strong>Goal:</strong> Start in public auditing and grow into a strong professional career</li>
+      </ul>
+    </section>
+
+    <section class="card" id="resume" style="margin-top:14px;">
+      <h2>Resume</h2>
+      <p class="muted">
+        For now, this is a placeholder. Later you can either:
+      </p>
+      <ul>
+        <li>Paste your resume as sections (Education, Experience, Leadership, etc.), or</li>
+        <li>Upload a PDF and link it (example: <code>assets/Payton-Resume.pdf</code>).</li>
+      </ul>
+
+      <div class="grid" style="margin-top:12px;">
+        <div class="card" style="padding:14px;">
+          <div class="item-title">Education</div>
+          <p class="item-desc">School, degree, expected graduation, GPA (optional)</p>
+        </div>
+        <div class="card" style="padding:14px;">
+          <div class="item-title">Experience</div>
+          <p class="item-desc">Role, company, dates, 2–3 bullet achievements</p>
+        </div>
+        <div class="card" style="padding:14px;">
+          <div class="item-title">Leadership / Activities</div>
+          <p class="item-desc">Clubs, volunteer work, projects, awards</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" id="skills" style="margin-top:14px;">
+      <h2>Skills</h2>
+      <p class="muted">(Placeholder list — update whenever.)</p>
+      <div class="grid">
+        <div class="card" style="padding:14px;">
+          <div class="item-title">Accounting</div>
+          <p class="item-desc">Financial statements • journal entries • basic ratio analysis</p>
+        </div>
+        <div class="card" style="padding:14px;">
+          <div class="item-title">Audit (growing)</div>
+          <p class="item-desc">Assertions • evidence • risk thinking • controls awareness</p>
+        </div>
+        <div class="card" style="padding:14px;">
+          <div class="item-title">Tools</div>
+          <p class="item-desc">Excel • PowerPoint • Word • (add: SQL/Access/VBA if relevant)</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" id="classwork" style="margin-top:14px;">
+      <h2>Classwork</h2>
+      <p class="muted">
+        Add assignments/projects here. Start with 2–4 items. Each should have:
+        title + class + 1–2 lines describing what you did.
+      </p>
+
+      <div class="grid">
+        <div class="card" style="padding:14px;">
+          <div class="item-title">Project 1 (Placeholder)</div>
+          <p class="item-desc">Course: ____ • Topic: ____ • What I did: ____</p>
+        </div>
+        <div class="card" style="padding:14px;">
+          <div class="item-title">Project 2 (Placeholder)</div>
+          <p class="item-desc">Course: ____ • Topic: ____ • What I did: ____</p>
+        </div>
+        <div class="card" style="padding:14px;">
+          <div class="item-title">Project 3 (Placeholder)</div>
+          <p class="item-desc">Course: ____ • Topic: ____ • What I did: ____</p>
+        </div>
+      </div>
+
+      <p class="small muted" style="margin-top:12px;">
+        Tip: You can link to PDFs/slides later by uploading them into <code>assets/</code> and adding links here.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div>Built on <span class="muted">GitHub Pages</span>. Updated anytime by editing <code>index.html</code>.</div>
+  </footer>
+</body>
+</html>
