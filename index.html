@@ -179,15 +179,17 @@
 
     <section class="card" id="about" style="margin-top:14px;">
       <h2>About</h2>
-      <p class="muted">
-        (Placeholder — edit this anytime.) Write 3–5 sentences about who you are, what you’re studying,
-        and what kind of opportunities you’re looking for.
-      </p>
       <ul>
-        <li><strong>Current focus:</strong> Accounting coursework + building audit fundamentals</li>
+        <li><strong>Current focus:</strong> Accounting major at Utah Valley University (UVU), graduating April 2026</li>
         <li><strong>Interests:</strong> Financial reporting, controls, and practical business analysis</li>
-        <li><strong>Goal:</strong> Start in public auditing and grow into a strong professional career</li>
+        <li><strong>Goal:</strong> Begin my audit internship with KPMG in January 2027 and convert to full-time role there</li>
       </ul>
+    </section>
+
+    <section class="card" id="hobbies" style="margin-top:14px;">
+      <h2>Hobbies</h2>
+      <p class="muted">A few things I enjoy outside of class and work.</p>
+      <div class="grid" id="hobbies-grid" aria-live="polite"></div>
     </section>
 
     <section class="card" id="resume" style="margin-top:14px;">
@@ -269,5 +271,50 @@
   <footer>
     <div>Built on <span class="muted">GitHub Pages</span>. Updated anytime by editing <code>index.html</code>.</div>
   </footer>
+
+  <script>
+    const hobbies = [
+      {
+        title: "Trail running",
+        description: "Morning runs to reset and stay active.",
+        image: "images/hobbies/trail-running.svg",
+        alt: "Running shoes and a winding trail illustration."
+      },
+      {
+        title: "Pickleball",
+        description: "Friendly games with classmates and friends.",
+        image: "images/hobbies/pickleball.svg",
+        alt: "Illustration of a pickleball paddle and ball."
+      },
+      {
+        title: "Photography",
+        description: "Capturing campus life and weekend trips.",
+        image: "images/hobbies/photography.svg",
+        alt: "Illustration of a camera with a starburst flash."
+      },
+      {
+        title: "Cooking",
+        description: "Trying new recipes and meal-prepping.",
+        image: "images/hobbies/cooking.svg",
+        alt: "Illustration of a saucepan and wooden spoon."
+      }
+    ];
+
+    const hobbiesGrid = document.getElementById("hobbies-grid");
+
+    hobbies.forEach((hobby) => {
+      const card = document.createElement("article");
+      card.className = "card";
+      card.style.padding = "14px";
+      card.innerHTML = `
+        <div class="photo">
+          <img src="${hobby.image}" alt="${hobby.alt}">
+        </div>
+        <h3 class="item-title" style="margin-top:10px;">${hobby.title}</h3>
+        <p class="item-desc">${hobby.description}</p>
+      `;
+      hobbiesGrid.appendChild(card);
+    });
+  </script>
 </body>
 </html>
