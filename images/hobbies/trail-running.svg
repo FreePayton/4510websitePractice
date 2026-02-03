@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-label="Trail running placeholder">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#6ea8fe"/>
+      <stop offset="100%" stop-color="#111a2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <path d="M0 420 C 200 360, 400 480, 800 390 L800 600 L0 600 Z" fill="#0b1220"/>
+  <path d="M100 470 C 220 430, 320 510, 520 460" fill="none" stroke="#e9eefc" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="620" cy="220" r="40" fill="#f7d774"/>
+  <text x="60" y="90" fill="#e9eefc" font-size="32" font-family="Arial, sans-serif">Trail running</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-label="Pickleball placeholder">
+  <rect width="800" height="600" fill="#111a2e"/>
+  <rect x="80" y="80" width="640" height="440" rx="28" fill="#0b1220" stroke="#6ea8fe" stroke-width="8"/>
+  <circle cx="560" cy="240" r="46" fill="#f7d774"/>
+  <rect x="210" y="260" width="140" height="200" rx="24" fill="#6ea8fe"/>
+  <rect x="250" y="300" width="60" height="120" rx="12" fill="#e9eefc"/>
+  <text x="120" y="160" fill="#e9eefc" font-size="32" font-family="Arial, sans-serif">Pickleball</text>
+</svg>
